@@ -25,17 +25,37 @@ img {
     --size_12: 12px;
     --size_13: 13px;
     --size_14: 14px;
+    --size_16: 16px;
     --size_22: 22px;
     --size_23: 23px;
     --font_weight_b: bold;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .flex {
     display: flex;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 .display {
     display: inline-block;
+}
+
+.overflow {
+    overflow: auto;
+    height: calc(100vh - 100px);
+}
+
+.radius {
+    border-radius: 100px;
 }
 
 
@@ -176,8 +196,7 @@ img {
 #menu_centrale {
     width: 75%;
     height: auto;
-    background-color: aliceblue;
-    margin: auto;
+    margin: 20px auto;
 }
 
 #menu {
@@ -195,27 +214,41 @@ img {
 
 /* musiche recenti */
 
-#recently_player {
+.testo_albums {
     color: var(--color_white);
     font-size: var(--size_23);
     font-weight: var(--font_weight_b);
-    margin: 30px;
+    margin: 30px 15px;
 }
 
 
 /* album */
 
-#albums {
-    width: 96%;
-    background-color: aliceblue;
-    margin: auto;
-    justify-content: space-between;
+.album {
+    width: 15%;
+    height: auto;
+    margin-left: 20px;
 }
 
-.album {
-    width: calc(90% / 6);
-    height: 160px;
-    background-color: rgb(51, 120, 181);
+.testo_album {
+    color: var(--color_white);
+    text-align: center;
+    font-size: var(--size_16);
+    font-weight: var(--font_weight_b);
+    margin: 10px;
+}
+
+.sottotesto_album {
+    color: var(--color_grey);
+    text-align: center;
+    font-size: var(--size_12);
+    font-weight: var(--font_weight_b);
+}
+
+.sottotesto {
+    color: var(--color_grey);
+    font-size: var(--size_12);
+    font-weight: var(--font_weight_b);
 }
 
 
