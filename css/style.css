@@ -1,0 +1,41 @@
+/********* COMMONS ROULES  *********/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/********* UTILITY  *********/
+
+:root {
+    --color_barra_laterale: #000000;
+    --color_barra_superiore: #080B12;
+    --color_barra_inferiore: #282828;
+    --color_centro: #141922;
+    --color_white: white;
+    --color_grey: #7D7F84;
+    --size_9_bold: 9px bold;
+    --size_12_bold: 12px bold;
+    --size_13_bold: 13px bold;
+    --size_14_bold: 14px bold;
+    --size_22_bold: 22px bold;
+}
+
+
+/********* HEADER  *********/
+
+
+/********* MAIN  *********/
+
+
+/********* FOOTER  *********/
+
+
+/********* MEDIA QUERIS  *********/
