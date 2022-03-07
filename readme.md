@@ -30,3 +30,6 @@ MAIN - Barra superiore:
 
 MAIN - Barra centrale:
 8. aggiungo menu e album.
+
+FOOTER
+9. Costruzione delle colonne del footer.
