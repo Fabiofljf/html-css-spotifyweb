@@ -27,3 +27,6 @@ MAIN - Barra di sx:
 
 MAIN - Barra superiore:
 7. aggiunta contenuto barra superiore con animazione.
+
+MAIN - Barra centrale:
+8. aggiungo menu e album.

@@ -26,6 +26,7 @@ img {
     --size_13: 13px;
     --size_14: 14px;
     --size_22: 22px;
+    --size_23: 23px;
     --font_weight_b: bold;
 }
 
@@ -168,6 +169,41 @@ img {
 
 
 /* contenuto barra centrale */
+
+
+/* menu */
+
+#menu_centrale {
+    width: 75%;
+    height: auto;
+    background-color: aliceblue;
+    margin: auto;
+}
+
+#menu {
+    text-align: center;
+}
+
+#menu>li {
+    display: inline-block;
+    color: var(--color_grey);
+    font-size: var(--size_13);
+    font-weight: var(--font_weight_b);
+    margin-left: 40px;
+}
+
+
+/* musiche recenti */
+
+#recently_player {
+    color: var(--color_white);
+    font-size: var(--size_23);
+    font-weight: var(--font_weight_b);
+    margin: 30px;
+}
+
+
+/* album */
 
 #albums {
     width: 96%;
