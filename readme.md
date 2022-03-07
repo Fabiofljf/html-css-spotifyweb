@@ -18,3 +18,6 @@ Una 75% di larghezza. Questa deve dividersi in due righe: una per l'header a cui
 
 4. Footer:
 - largezza 100% e altezza fissa in px. Uso position.
+
+MAIN
+5. creo un contenitore "albums" a cui do una larghezza, lo centro con margin 0 e inserisco dei piccoli contenitori per gli almbum, a cui do una misura in calc e un'altezza.
