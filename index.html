@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <title>Spotify</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Spotify</title>
 </head>
 
 <body>
@@ -17,7 +19,51 @@
     <!-- /#site_header -->
 
     <main id="site_main" class="flex">
-        <div id="barra_laterale_sx"></div>
+        <div id="barra_laterale_sx">
+            <img src="./img/logo.svg" alt="logo di spotify">
+            <ul id="btn_principali">
+                <li class="home">
+                    <i class="fa-solid fa-house display"></i>
+                    <div class="display">Home</div>
+                </li>
+                <li class="cerca">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="display">Cerca</div>
+                </li>
+                <li class="libreria">
+                    <i class="fa-solid fa-swatchbook"></i>
+                    <div class="display">La tua libreria</div>
+                </li>
+            </ul>
+            <div id="playlist">
+                <h4>PLAYLIST</h4>
+                <ul>
+                    <li id="add_playlist">
+                        <i class="fa-solid fa-square-plus display"></i>
+                        <div class="display">Crea Playlist</div>
+                    </li>
+                </ul>
+                <div id="nuove_playlist">
+                    <ul id="playlists">
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="installa">
+                <i class="fa-solid fa-circle-info display"></i>
+                <div class="display">Installa app</div>
+            </div>
+            <div id="user">
+                <i class="fa-solid fa-circle-user display"></i>
+                <div class="display">John Doe</div>
+            </div>
+        </div>
         <div id="barra_centrale">
             <div id="barra_superiore"></div>
             <div id="albums" class="flex jc_s-b">
