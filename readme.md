@@ -24,3 +24,6 @@ MAIN
 
 MAIN - Barra di sx:
 6. costruzione colonna di sinistra.
+
+MAIN - Barra superiore:
+7. aggiunta contenuto barra superiore con animazione.
