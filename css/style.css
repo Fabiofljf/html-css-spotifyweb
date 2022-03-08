@@ -265,7 +265,7 @@ ul {
 /* album */
 
 .album {
-    width: calc((100% - 300px) / 6);
+    width: calc(100% / 6);
     height: auto;
     margin-left: 20px;
     position: relative;
@@ -274,14 +274,18 @@ ul {
 
 /* bonus */
 
-.effetto_play img {
-    width: 300px;
+.effetto_play {
     position: relative;
+}
+
+.effetto_play img {
+    width: 100%;
+    display: block;
 }
 
 .play {
     width: 100%;
-    height: 200px;
+    height: 100%;
     background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
     top: 0;
