@@ -22,6 +22,7 @@ img {
     --color_white: white;
     --color_grey: #7D7F84;
     --size_9: 9px;
+    --size_10: 10px;
     --size_12: 12px;
     --size_13: 13px;
     --size_14: 14px;
@@ -352,24 +353,26 @@ img {
 }
 
 .barra_centrale_inferiore_su {
-    width: 60%;
+    width: 50%;
     justify-content: space-around;
     align-self: center;
     color: var(--color_white);
+    font-size: var(--size_22);
 }
 
 .barra_centrale_inferiore_giu {
-    width: 100%;
+    width: 80%;
     justify-content: space-around;
     align-self: center;
 }
 
 .min {
     color: var(--color_white);
+    font-size: var(--size_10);
 }
 
 .barra_scorrimento {
-    width: 400px;
+    width: 500px;
     background-color: grey;
     border-radius: 30px;
     height: 20px;
