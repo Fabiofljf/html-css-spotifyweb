@@ -20,49 +20,60 @@
 
     <main id="site_main" class="flex">
         <div id="barra_laterale_sx">
-            <img src="./img/logo.svg" alt="logo di spotify">
-            <ul id="btn_principali">
-                <li class="home">
-                    <i class="fa-solid fa-house display"></i>
-                    <div class="display">Home</div>
-                </li>
-                <li class="cerca">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <div class="display">Cerca</div>
-                </li>
-                <li class="libreria">
-                    <i class="fa-solid fa-swatchbook"></i>
-                    <div class="display">La tua libreria</div>
-                </li>
-            </ul>
-            <div id="playlist">
-                <h4>PLAYLIST</h4>
-                <ul>
-                    <li id="add_playlist">
-                        <i class="fa-solid fa-square-plus display"></i>
-                        <div class="display">Crea Playlist</div>
+            <div id="logo_camp">
+                <img src="./img/logo.svg" alt="logo di spotify">
+            </div>
+            <div id="btn_camp">
+                <ul id="btn_principali">
+                    <li class="home">
+                        <i class="fa-solid fa-house display"></i>
+                        <div class="display">Home</div>
+                    </li>
+                    <li class="cerca">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="display">Cerca</div>
+                    </li>
+                    <li class="libreria">
+                        <i class="fa-solid fa-swatchbook"></i>
+                        <div class="display">La tua libreria</div>
                     </li>
                 </ul>
-                <div id="nuove_playlist">
-                    <ul id="playlists">
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
+            </div>
+            <div id="playlist_camp">
+                <div id="playlist">
+                    <h4>PLAYLIST</h4>
+                    <ul>
+                        <li id="add_playlist">
+                            <i class="fa-solid fa-square-plus display"></i>
+                            <div class="display">Crea Playlist</div>
+                        </li>
                     </ul>
+                    <div id="nuove_playlist">
+                        <ul id="playlists">
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div id="installa">
-                <i class="fa-solid fa-circle-info display"></i>
-                <div class="display">Installa app</div>
-            </div>
-            <div class="separatore"></div>
-            <div id="user">
-                <i class="fa-solid fa-circle-user display"></i>
-                <div class="display">John Doe</div>
+            <div id="info_camp">
+                <div id="info">
+                    <div id="installa">
+                        <i class="fa-solid fa-circle-info display"></i>
+                        <div class="display">Installa app</div>
+                    </div>
+                    <div class="separatore"></div>
+                    <div id="user">
+                        <i class="fa-solid fa-circle-user display"></i>
+                        <div class="display">John Doe</div>
+                    </div>
+
+                </div>
             </div>
         </div>
         <div id="barra_centrale">
@@ -185,44 +196,48 @@
     <!-- /#site_main -->
 
     <footer id="site_footer">
-        <div id="barra_inferiore">
-            <div class="barra flex">
-                <div id="col_sx" class="w_20 flex">
-                    <div id="img_barra_inferiore" class="as_c">
+        <div id="barra_inferiore" class="flex">
+            <div id="col_sx" class="flex as_c w_20">
+                <div id="flex1" class="flex">
+                    <div id="img_barra_inferiore">
                         <img src="./img/sinister.jpeg" alt="foto album sinister">
                     </div>
-                    <div class="as_c m_lf_10">
+                    <div class="m_lf_10 as_c">
                         <div class="testo_barra_inferiore">Sinister</div>
                         <div class="sottotesto_barra_inferiore">Brano nome</div>
                     </div>
-                    <div class="icone_barra_inferiore_col_sx">
+                </div>
+                <div id="flex2" class="flex">
+                    <div class="icone_barra_inferiore_col_sx as_c">
                         <i class="fa-solid fa-heart"></i>
                         <i class="fa-solid fa-folder"></i>
                     </div>
                 </div>
-                <div id="col_c" class="w_60 flex jc_c">
-                    <div class="barra_centrale_inferiore flex fx_drt_col">
-                        <div class="barra_centrale_inferiore_su flex">
-                            <i class="fa-solid fa-shuffle"></i>
-                            <i class="fa-solid fa-backward-step"></i>
-                            <i class="fa-solid fa-circle-play"></i>
-                            <i class="fa-solid fa-forward-step"></i>
-                            <i class="fa-solid fa-arrow-rotate-left"></i>
-                        </div>
-                        <div class="barra_centrale_inferiore_giu flex">
-                            <div class="min">0:25</div>
-                            <div class="barra_scorrimento"></div>
-                            <div class="min">4:35</div>
-                        </div>
+            </div>
+            <div id="col_c" class="flex jc_c as_c w_60">
+                <div class="barra_centrale_inferiore flex fx_drt_col">
+                    <div class="barra_centrale_inferiore_su flex">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-arrow-rotate-left"></i>
+                    </div>
+                    <div class="barra_centrale_inferiore_giu flex">
+                        <div class="min">0:25</div>
+                        <div class="barra_scorrimento"></div>
+                        <div class="min">4:35</div>
                     </div>
                 </div>
-                <div id="col_dx" class="w_20">
-                    <div class="icone_barra_inferiore_dx">
-                        <i class="fa-solid fa-list"></i>
-                        <i class="fa-solid fa-tv"></i>
-                        <i class="fa-solid fa-volume-high"></i>
-                    </div>
-                    <div class="barra_scorrimento_col_dx"></div>
+            </div>
+            <div id="col_dx" class="flex as_c w_20">
+                <div class="icone_barra_inferiore_dx">
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div id="barra_scorrimento_col_dx">
+                    <div class="barra_volume"></div>
                 </div>
             </div>
         </div>
