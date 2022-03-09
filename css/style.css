@@ -559,10 +559,12 @@ li:hover a {
     }
     #barra_laterale_sx {
         width: 200px;
+        height: 100%;
         padding-left: 20px;
     }
     #barra_centrale {
         width: calc(100% - 200px);
+        height: 100%;
     }
     #barra_superiore {
         height: 60px;
@@ -574,6 +576,9 @@ li:hover a {
     .barra_centrale_inferiore {
         width: 80%;
         height: 60px;
+    }
+    .albums {
+        flex-wrap: wrap;
     }
     /* logo */
     #logo_camp img {
@@ -609,6 +614,9 @@ li:hover a {
     }
     #add_playlist>a {
         font-size: var(--size_12);
+    }
+    .overflow {
+        height: calc(100% - 80px);
     }
 }
 
@@ -745,5 +753,8 @@ li:hover a {
     }
     .barra_volume {
         width: 40px;
+    }
+    .overflow {
+        height: calc(100% - 60px);
     }
 }
