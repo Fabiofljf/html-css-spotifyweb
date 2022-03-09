@@ -34,6 +34,7 @@ li:hover a {
     --color_centro: #141922;
     --color_white: white;
     --color_grey: #7D7F84;
+    --size_8: 8px;
     --size_9: 9px;
     --size_10: 10px;
     --size_12: 12px;
@@ -42,6 +43,7 @@ li:hover a {
     --size_16: 16px;
     --size_22: 22px;
     --size_23: 23px;
+    --size_26: 26px;
     --font_weight_b: bold;
 }
 
@@ -106,7 +108,10 @@ li:hover a {
 #barra_laterale_sx {
     width: 300px;
     background-color: var(--color_barra_laterale);
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 40px;
 }
 
 #barra_centrale {
@@ -124,15 +129,8 @@ li:hover a {
 
 /*** contenuto barra di sinistra ***/
 
-#barra_laterale_sx {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left: 40px;
-}
 
-
-/* img */
+/* logo */
 
 #logo_camp img {
     width: 200px;
@@ -280,6 +278,11 @@ li:hover a {
     margin-left: 40px;
 }
 
+.linea_verde {
+    border-bottom: 1px solid greenyellow;
+    width: 50%;
+}
+
 
 /* musiche recenti */
 
@@ -294,7 +297,7 @@ li:hover a {
 /* album */
 
 .album {
-    width: calc(100% / 6);
+    width: 15%;
     height: auto;
     margin-left: 20px;
     position: relative;
@@ -372,8 +375,13 @@ li:hover a {
 
 /* barra di sx */
 
-#col_sx {
-    justify-content: space-around;
+#flex1 {
+    flex-grow: 2;
+}
+
+#flex2,
+#flex3 {
+    flex-grow: 1;
 }
 
 #img_barra_inferiore {
@@ -414,12 +422,34 @@ li:hover a {
     justify-content: space-around;
 }
 
+#flex4,
+#flex6 {
+    flex-grow: 2;
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+#flex5 {
+    flex-grow: 1;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
 .barra_centrale_inferiore_su {
     width: 50%;
-    justify-content: space-around;
     align-self: center;
     color: var(--color_white);
     font-size: var(--size_22);
+}
+
+.circle {
+    font-size: var(--size_26);
+}
+
+#flex5:hover .circle {
+    font-size: 30px;
 }
 
 .barra_centrale_inferiore_giu {
@@ -443,7 +473,7 @@ li:hover a {
     align-self: center;
     background-color: grey;
     border-radius: 10px;
-    height: 10px;
+    height: 5px;
 }
 
 
@@ -481,3 +511,239 @@ li:hover a {
 
 
 /********* MEDIA QUERIS  *********/
+
+@media screen and (min-width: 1024px) {
+    /********* MAIN  *********/
+    /*** barre ***/
+    #site_main {
+        height: calc(100vh - 80px);
+    }
+    #barra_laterale_sx {
+        width: 200px;
+        padding-left: 20px;
+    }
+    #barra_centrale {
+        width: calc(100% - 200px);
+    }
+    #barra_superiore {
+        height: 80px;
+    }
+    #barra_inferiore {
+        width: 100%;
+        height: 80px;
+    }
+    .barra_centrale_inferiore {
+        width: 80%;
+        height: 80px;
+    }
+    /* logo */
+    #logo_camp img {
+        width: 150px;
+        height: auto;
+    }
+    /** contenuto barra superiore **/
+    .upgrade {
+        padding: 15px;
+        top: 15px;
+    }
+    .testo_album {
+        font-size: var(--size_14);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /********* MAIN  *********/
+    /*** barre ***/
+    #site_main {
+        height: calc(100vh - 60px);
+    }
+    #barra_laterale_sx {
+        width: 200px;
+        padding-left: 20px;
+    }
+    #barra_centrale {
+        width: calc(100% - 200px);
+    }
+    #barra_superiore {
+        height: 60px;
+    }
+    #barra_inferiore {
+        width: 100%;
+        height: 60px;
+    }
+    .barra_centrale_inferiore {
+        width: 80%;
+        height: 60px;
+    }
+    /* logo */
+    #logo_camp img {
+        width: 100px;
+    }
+    /** contenuto barra superiore **/
+    .upgrade {
+        padding: 10px;
+        top: 10px;
+    }
+    /* menu */
+    .menu>a {
+        font-size: var(--size_9);
+        margin-left: 20px;
+    }
+    /* album */
+    .testo_albums {
+        font-size: var(--size_16);
+    }
+    .sottotesto {
+        font-size: var(--size_10);
+    }
+    .testo_album {
+        font-size: var(--size_10);
+        margin: 10px 0;
+    }
+    .sottotesto_album {
+        font-size: var(--size_9);
+    }
+    /* col_sx playlist */
+    #add_playlist>a>i {
+        font-size: 30px;
+    }
+    #add_playlist>a {
+        font-size: var(--size_12);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /********* MAIN  *********/
+    /*** barre ***/
+    #site_main {
+        height: calc(100vh - 60px);
+    }
+    #barra_laterale_sx {
+        width: 50px;
+        height: 100%;
+        padding-left: 10px;
+    }
+    #barra_centrale {
+        width: calc(100% - 50px);
+        height: 100%;
+    }
+    #barra_superiore {
+        height: 60px;
+    }
+    #barra_inferiore {
+        width: 100%;
+        height: 60px;
+    }
+    .barra_centrale_inferiore {
+        width: 80%;
+        height: 60px;
+    }
+    /* contenuto barra laterale sx */
+    #logo_camp {
+        background: url(../img/logo-small.svg);
+        background-repeat: no-repeat;
+        margin-top: 50px;
+        font-size: 25px;
+    }
+    #logo_camp img {
+        visibility: hidden;
+    }
+    #btn_principali {
+        margin-top: 35px;
+    }
+    .home>a,
+    .cerca>a,
+    .libreria>a {
+        visibility: hidden;
+    }
+    .home>i,
+    .cerca>i,
+    .libreria>i {
+        padding: 0 3px;
+        font-size: 20px;
+    }
+    #playlist_camp,
+    #info_camp {
+        visibility: hidden;
+    }
+    /** contenuto barra superiore **/
+    .upgrade {
+        font-size: var(--size_9);
+        padding: 10px;
+        top: 10px;
+        right: 20px;
+    }
+    /* menu */
+    #menu_c {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .menu>a {
+        font-size: var(--size_8);
+        margin-left: 5px;
+    }
+    /* album */
+    .albums {
+        flex-wrap: wrap;
+    }
+    .album {
+        width: 45%;
+        margin-left: 10px;
+    }
+    .testo_albums {
+        font-size: var(--size_14);
+    }
+    .sottotesto {
+        font-size: var(--size_8);
+    }
+    /* barra sx playing */
+    #img_barra_inferiore {
+        width: 30px;
+        height: 30px;
+    }
+    .testo_barra_inferiore {
+        font-size: var(--size_10);
+    }
+    .sottotesto_barra_inferiore {
+        font-size: var(--size_8);
+    }
+    #flex3 {
+        visibility: hidden;
+    }
+    .testo_album {
+        font-size: var(--size_9);
+        margin: 10px 0;
+    }
+    .sottotesto_album {
+        font-size: var(--size_8);
+    }
+    /* col_sx playlist */
+    .barra_centrale_inferiore_su {
+        justify-content: center;
+    }
+    #add_playlist>a>i {
+        font-size: 30px;
+    }
+    #add_playlist>a {
+        font-size: var(--size_12);
+    }
+    .s {
+        visibility: hidden;
+    }
+    #flex5 {
+        margin: 0 5px;
+    }
+    .barra_scorrimento {
+        width: 50%;
+    }
+    .icone_barra_inferiore_dx {
+        width: 20%;
+        justify-content: flex-end;
+    }
+    #barra_scorrimento_col_dx {
+        width: 65%;
+    }
+    .barra_volume {
+        width: 40px;
+    }
+}
