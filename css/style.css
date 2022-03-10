@@ -129,6 +129,15 @@ li:hover a {
 
 /*** contenuto barra di sinistra ***/
 
+#logo_camp,
+#btn_camp {
+    flex-grow: 1;
+}
+
+#playlist_camp {
+    flex-grow: 3;
+}
+
 
 /* logo */
 
@@ -579,6 +588,11 @@ li:hover a {
     }
     .albums {
         flex-wrap: wrap;
+    }
+    .album {
+        width: 23.5%;
+        border-bottom: 20px;
+        margin-left: 5px;
     }
     /* logo */
     #logo_camp img {
