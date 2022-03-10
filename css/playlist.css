@@ -1,0 +1,392 @@
+/********* COMMONS ROULES  *********/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color_grey);
+}
+
+li:hover a {
+    color: white;
+}
+
+
+/********* UTILITY  *********/
+
+:root {
+    --color_barra_laterale: #000000;
+    --color_barra_superiore: #080B12;
+    --color_barra_inferiore: #282828;
+    --color_centro: #141922;
+    --color_white: white;
+    --color_grey: #7D7F84;
+    --size_8: 8px;
+    --size_9: 9px;
+    --size_10: 10px;
+    --size_12: 12px;
+    --size_13: 13px;
+    --size_14: 14px;
+    --size_16: 16px;
+    --size_22: 22px;
+    --size_23: 23px;
+    --size_26: 26px;
+    --font_weight_b: bold;
+}
+
+.flex {
+    display: flex;
+}
+
+.fx_drt_col {
+    flex-direction: column;
+}
+
+.jc_c {
+    justify-content: center;
+}
+
+.as_c {
+    align-self: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.display {
+    display: inline-block;
+}
+
+.overflow {
+    overflow: auto;
+    height: calc(100% - 100px);
+}
+
+.radius {
+    border-radius: 50%;
+}
+
+.m_lf_10 {
+    margin-left: 10px;
+}
+
+.w_20 {
+    width: 20%;
+}
+
+.w_60 {
+    width: 60%;
+}
+
+
+/********* MAIN  *********/
+
+
+/*** barre ***/
+
+#site_main {
+    height: calc(100% - 100px);
+}
+
+#barra_laterale_sx {
+    width: 300px;
+    background-color: var(--color_barra_laterale);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 40px;
+}
+
+#barra_centrale {
+    width: calc(100% - 300px);
+    background-color: var(--color_centro);
+    position: relative;
+}
+
+#barra_superiore {
+    height: 300px;
+    background-color: var(--color_barra_superiore);
+    display: flex;
+}
+
+
+/*** contenuto barra di sinistra ***/
+
+
+/* logo */
+
+#logo_camp img {
+    width: 200px;
+    height: auto;
+}
+
+
+/* btn */
+
+.home,
+.cerca,
+.libreria>i {
+    color: var(--color_grey);
+    font-size: var(--size_13);
+    font-weight: var(--font_weight_b);
+    margin-top: 20px;
+}
+
+.home,
+.cerca,
+.libreria>a {
+    color: var(--color_grey);
+    font-size: var(--size_13);
+    font-weight: var(--font_weight_b);
+    margin-top: 20px;
+}
+
+
+/* playlist */
+
+#playlist>h4 {
+    font-size: var(--size_14);
+    font-weight: var(--font_weight_b);
+    color: var(--color_white);
+    margin-bottom: 20px;
+}
+
+#add_playlist>a>i {
+    font-size: 40px;
+    color: var(--color_grey);
+    vertical-align: middle;
+}
+
+#playlist>a:hover .white {
+    color: white;
+}
+
+#add_playlist>a {
+    font-size: var(--size_14);
+    font-weight: var(--font_weight_b);
+    color: var(--color_grey);
+}
+
+#nuove_playlist {
+    height: 200px;
+    overflow: auto;
+}
+
+#playlists>li {
+    color: var(--color_grey);
+    padding: 10px 0;
+    font-size: var(--size_12);
+    font-weight: var(--font_weight_b);
+}
+
+
+/* info */
+
+#installa>i {
+    color: var(--color_grey);
+    font-size: var(--size_12);
+    vertical-align: middle;
+}
+
+#installa>a {
+    color: var(--color_grey);
+    font-size: var(--size_12);
+    font-weight: var(--font_weight_b);
+}
+
+#installa:hover .white {
+    color: white;
+}
+
+.separatore {
+    border-bottom: 1px solid grey;
+    width: 70%;
+    margin: 20px;
+}
+
+#user>i {
+    color: var(--color_white);
+    font-size: var(--size_22);
+    vertical-align: middle;
+}
+
+#user>div {
+    color: var(--color_white);
+    font-size: var(--size_14);
+    font-weight: var(--font_weight_b);
+}
+
+
+/*** contenuto barra main ***/
+
+
+/** contenuto barra superiore **/
+
+
+/** contenuto barra centrale **/
+
+
+/********* FOOTER  *********/
+
+#barra_inferiore {
+    width: 100%;
+    height: 100px;
+    background-color: var(--color_barra_inferiore);
+    position: absolute;
+    bottom: 0;
+    justify-content: space-between;
+}
+
+
+/* barra di sx */
+
+#flex1 {
+    flex-grow: 2;
+}
+
+#flex2,
+#flex3 {
+    flex-grow: 1;
+}
+
+#img_barra_inferiore {
+    width: 60px;
+    height: 60px;
+}
+
+.testo_barra_inferiore {
+    color: var(--color_white);
+    font-size: var(--size_12);
+    font-weight: var(--font_weight_b);
+}
+
+.sottotesto_barra_inferiore {
+    color: var(--color_grey);
+    font-size: var(--size_9);
+    font-weight: var(--font_weight_b);
+}
+
+.icone_barra_inferiore_col_sx {
+    color: grey;
+}
+
+.icone_barra_inferiore_col_sx:hover i {
+    color: white;
+}
+
+.icone_barra_inferiore_col_sx>i {
+    margin-left: 20px;
+}
+
+
+/* barra centrale */
+
+.barra_centrale_inferiore {
+    width: 80%;
+    height: 100px;
+    justify-content: space-around;
+}
+
+#flex4,
+#flex6 {
+    flex-grow: 2;
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+#flex5 {
+    flex-grow: 1;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.barra_centrale_inferiore_su {
+    width: 50%;
+    align-self: center;
+    color: var(--color_white);
+    font-size: var(--size_22);
+}
+
+.circle {
+    font-size: var(--size_26);
+}
+
+#flex5:hover .circle {
+    font-size: 30px;
+}
+
+.barra_centrale_inferiore_giu {
+    width: 80%;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.min {
+    color: var(--color_white);
+    font-size: var(--size_10);
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.barra_scorrimento {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: grey;
+    border-radius: 10px;
+    height: 5px;
+}
+
+
+/* barra di dx */
+
+#col_dx {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.icone_barra_inferiore_dx {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    color: var(--color_grey);
+}
+
+.icone_barra_inferiore_dx:hover i {
+    color: white;
+}
+
+#barra_scorrimento_col_dx {
+    display: flex;
+    align-self: center;
+    width: 50%;
+}
+
+.barra_volume {
+    width: 100px;
+    background-color: grey;
+    border-radius: 10px;
+    height: 5px;
+}
+
+
+/********* MEDIA QUERIS  *********/

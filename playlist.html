@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/playlist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Playlist Spotify</title>
+</head>
+
+<body>
+
+    <main id="site_main" class="flex">
+        <div id="barra_laterale_sx">
+            <div id="logo_camp">
+                <img src="./img/logo.svg" alt="logo di spotify">
+            </div>
+            <div id="btn_camp">
+                <ul id="btn_principali">
+                    <li class="home">
+                        <i class="fa-solid fa-house display"></i>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="cerca">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a href="#">Cerca</a>
+                    </li>
+                    <li class="libreria">
+                        <i class="fa-solid fa-swatchbook"></i>
+                        <a href="#">La tua libreria</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="playlist_camp">
+                <div id="playlist">
+                    <h4>PLAYLIST</h4>
+                    <ul>
+                        <li id="add_playlist">
+                            <a class="white" href="#">
+                                <i class="fa-solid fa-square-plus"></i>
+                            </a>
+                            <a class="white" href="#">Crea Playlist</a>
+                        </li>
+                    </ul>
+                    <div id="nuove_playlist">
+                        <ul id="playlists">
+                            <li>
+                                <a href="./playlist.html">Playlist Fabio</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="info_camp">
+                <div id="info">
+                    <div id="installa">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <a class="white" href="#">Installa app</a>
+                    </div>
+                    <div class="separatore"></div>
+                    <div id="user">
+                        <i class="fa-solid fa-circle-user display"></i>
+                        <div class="display">John Doe</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /#barra_laretale_sx -->
+
+        <div id="barra_centrale">
+            <div id="barra_superiore">
+                <div class="row"></div>
+                <div class="row"></div>
+            </div>
+            <div class="overflow"></div>
+        </div>
+        <!-- /#barra_centrale -->
+    </main>
+    <!-- /#site_main -->
+
+    <footer id="site_footer">
+        <div id="barra_inferiore" class="flex">
+            <div id="col_sx" class="flex as_c w_20">
+                <div id="flex1" class="flex">
+                    <div id="img_barra_inferiore">
+                        <img src="./img/sinister.jpeg" alt="foto album sinister">
+                    </div>
+                    <div class="m_lf_10 as_c">
+                        <div class="testo_barra_inferiore">Sinister</div>
+                        <div class="sottotesto_barra_inferiore">Brano nome</div>
+                    </div>
+                </div>
+                <div id="flex2" class="flex">
+                    <div class="icone_barra_inferiore_col_sx as_c">
+                        <a class="as_c" href="#">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <div id="flex3" class="flex">
+                    <div class="icone_barra_inferiore_col_sx as_c">
+                        <a class="as_c" href="#">
+                            <i class="fa-solid fa-folder"></i>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="col_c" class="flex jc_c as_c w_60">
+                <div class="barra_centrale_inferiore flex fx_drt_col">
+                    <div class="barra_centrale_inferiore_su flex">
+                        <div id="flex4">
+                            <i class="s fa-solid fa-shuffle"></i>
+                            <i class="fa-solid fa-backward-step"></i>
+                        </div>
+                        <div id="flex5">
+                            <i class="circle fa-solid fa-circle-play"></i>
+                        </div>
+                        <div id="flex6">
+                            <i class="fa-solid fa-forward-step"></i>
+                            <i class="s fa-solid fa-arrow-rotate-left"></i>
+                        </div>
+                    </div>
+                    <div class="barra_centrale_inferiore_giu flex">
+                        <div class="min">0:25</div>
+                        <div class="barra_scorrimento"></div>
+                        <div class="min">4:35</div>
+                    </div>
+                </div>
+            </div>
+            <div id="col_dx" class="flex as_c w_20">
+                <div class="icone_barra_inferiore_dx">
+                    <i class="s fa-solid fa-list"></i>
+                    <i class="s fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div id="barra_scorrimento_col_dx">
+                    <div class="barra_volume"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /#site_footer -->
+</body>
+
+</html>
