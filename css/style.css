@@ -132,6 +132,7 @@ li:hover a {
 #logo_camp,
 #btn_camp {
     flex-grow: 1;
+    margin-top: 10px;
 }
 
 #playlist_camp {
@@ -388,9 +389,8 @@ li:hover a {
     flex-grow: 2;
 }
 
-#flex2,
-#flex3 {
-    flex-grow: 1;
+#flex2 {
+    flex-grow: 2;
 }
 
 #img_barra_inferiore {
