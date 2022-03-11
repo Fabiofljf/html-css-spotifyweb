@@ -131,6 +131,7 @@ li:hover a {
     background-color: #868D86;
     display: flex;
     flex-direction: column;
+    box-shadow: 20px -6px 20px 20px #000000;
 }
 
 
@@ -361,7 +362,7 @@ li:hover a {
 /* playlist track */
 
 .pl_y1 {
-    height: 280px;
+    height: calc(100vh - 580px);
     overflow: scroll;
 }
 
@@ -374,9 +375,8 @@ li:hover a {
 
 .play_row_1 {
     width: 90%;
-    margin: auto;
+    margin: 10px auto;
     color: aliceblue;
-    margin: 20px;
 }
 
 .a1 {
